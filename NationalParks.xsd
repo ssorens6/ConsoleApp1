@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!--    define national parks type-->
     <xsd:element name="NationalParks" type="NationalParksType"/>
     <xsd:complexType name="NationalParksType">
+<!--        sequence of element National Park of National Park type-->
         <xsd:sequence>
             <xsd:element name="NationalPark" type="NationalParkType" minOccurs="1" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
+<!--    define national park type-->
     <xsd:complexType name="NationalParkType">
+<!--        sequence of elements-->
         <xsd:sequence>
             <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
             <xsd:element name="Phone" type="xsd:string"  minOccurs="1" maxOccurs="unbounded"/>
             <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
         </xsd:sequence>
+<!--        optional ratings tag-->
         <xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
     </xsd:complexType>
+<!--    define address type-->
     <xsd:complexType name="AddressType">
+<!--        sequence of elements-->
         <xsd:sequence>
             <xsd:element name="Number" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1"/>
             <xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1"/>
@@ -22,6 +29,7 @@
             <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
             <xsd:element name="Zip" type="xsd:string" minOccurs="1" maxOccurs="1"/>
         </xsd:sequence>
+<!--        option nearest airport aattribute-->
         <xsd:attribute name="NearestAirport" type="xsd:string" use="optional"/>
     </xsd:complexType>
 </xsd:schema>

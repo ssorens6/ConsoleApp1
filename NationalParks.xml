@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!--Root element -->
 <NationalParks>
+<!--    optional rating-->
     <NationalPark Rating = "4.9">
+<!--        name element-->
         <Name>Grand Canyon</Name>
+<!--        phone numbers elements-->
         <Phone>928-638-7496</Phone>
         <Phone>888-297-2757</Phone>
         <Phone>866-499-2574</Phone>
+<!--        Address with nearest airport-->
         <Address NearestAirport = "Flagstaff">
+<!--            Address number element-->
             <Number>8</Number>
+<!--            Address street element-->
             <Street>S Entrance Road</Street>
+<!--            Address City element -->
             <City>Grand Canyon</City>
+<!--            Address state element-->
             <State>AZ</State>
+<!--            Address zip code element-->
             <Zip>86023</Zip>
+<!--            Closing tags-->
         </Address>
     </NationalPark>
+<!--    9 more national parks are listed bellow from Utah, Washington and California-->
     <NationalPark Rating = "4.8">
         <Name>Arches</Name>
         <Phone>435-719-2299</Phone>
