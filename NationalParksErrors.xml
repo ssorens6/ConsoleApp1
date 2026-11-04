@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!--The root element name is NationalPark, instead of NationalParks here-->
 <NationalPark>
     <NationalPark Rating = "4.9">
-        <Name>Grand Canyon</Name>
+<!--        Requird attribute name is missing here-->
         <Phone>928-638-7496</Phone>
         <Phone>888-297-2757</Phone>
         <Phone>866-499-2574</Phone>
@@ -16,9 +18,10 @@
     </NationalPark>
     <NationalPark Rating = "4.8">
         <Name>Arches</Name>
+<!--        A Phone element is missing on one of the national parks here-->
         <Address NearestAirport = "Canyonlands Field">
             <Number>5 </Number>
-            <Street>miles north of Moab, Utah, on US 191
+            <Street>miles north of Moab, Utah, on US 191</Street>
             <City>Moab</City>
             <State>UT</State>
             <Zip>84532</Zip>
@@ -30,13 +33,16 @@
         <Phone>855-765-02557</Phone>
         <Address NearestAirport = "Bryce Canyon">
             <Number>1</Number>
-            <Street>UT-63</Street>
+<!--            An Address element has no closing tag bellow-->
+            <Street>UT-63 
             <City>Bryce</City>
             <State>UT</State>
             <Zip>84764</Zip>
         </Address>
     </NationalPark>
     <NationalPark Rating = "4.8">
+<!--        Two names are provided for one of the national parks bellow-->
+        <Name>Canyonlands</Name>
         <Name>Canyonlands</Name>
         <Phone>435-719-2313</Phone>
         <Phone>435-259-4351</Phone>
@@ -51,17 +57,6 @@
             <City>Moab</City>
             <State>UT</State>
             <Zip>84532</Zip>
-        </Address>
-    </NationalPark>
-    <NationalPark Rating = "4.8">
-        <Name>Capital Reef</Name>
-        <Phone>435-425-3791</Phone>
-        <Address NearestAirport = "Salt Lake City International">
-            <Number>52</Number>
-            <Street>West Headquarters Dr</Street>
-            <City>Torrey</City>
-            <State>UT</State>
-            <Zip>84775</Zip>
         </Address>
     </NationalPark>
     <NationalPark Rating = "4.8">
@@ -119,6 +114,7 @@
         <Phone>360-288-2444</Phone>
         <Phone>888-896-3818</Phone>
         <Address NearestAirport = "Seattle Tacoma International">
+            <Number>3002</Number>
             <Street>Mount Angeles Road</Street>
             <City>Port Angeles</City>
             <State>WA</State>
